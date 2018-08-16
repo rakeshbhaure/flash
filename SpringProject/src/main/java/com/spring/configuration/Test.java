@@ -13,10 +13,12 @@ public class Test {
 		Fruit fruitNametwo = (Fruit) context.getBean("banana");
 		Fruit fruit = (Fruit) context.getBean("mango");
 		Fruit fruitOrange = (Fruit) context.getBean("orange");
+		Fruit jack = (Fruit) context.getBean("jack");
 		System.out.println(fruitName.fruitType());
 		System.out.println(fruitNametwo.fruitType());
 		System.out.println(fruit.fruitType());
 		System.out.println(fruitOrange.fruitType());
+		System.out.println(jack.fruitType());
 		context.close();
 
 	}
