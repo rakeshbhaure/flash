@@ -10,7 +10,9 @@ public class Test {
 	public static void main(String[] args) {
 		AbstractApplicationContext  context =new AnnotationConfigApplicationContext(AppConfiguration.class);
 		Fruit fruitName=(Fruit) context.getBean("fruit");
+		Fruit fruitNametwo=(Fruit) context.getBean("banana");
 		System.out.println(fruitName.fruitType());
+		System.out.println(fruitNametwo.fruitType());
 
 	}
 
