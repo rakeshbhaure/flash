@@ -8,11 +8,13 @@ import com.spring.service.Fruit;
 public class Test {
 
 	public static void main(String[] args) {
-		AbstractApplicationContext  context =new AnnotationConfigApplicationContext(AppConfiguration.class);
-		Fruit fruitName=(Fruit) context.getBean("fruit");
-		Fruit fruitNametwo=(Fruit) context.getBean("banana");
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
+		Fruit fruitName = (Fruit) context.getBean("fruit");
+		Fruit fruitNametwo = (Fruit) context.getBean("banana");
+		Fruit fruit = (Fruit) context.getBean("mango");
 		System.out.println(fruitName.fruitType());
 		System.out.println(fruitNametwo.fruitType());
+		System.out.println(fruit.fruitType());
 
 	}
 
